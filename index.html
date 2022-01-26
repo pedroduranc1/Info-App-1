@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                  <a href="/" class="flex">
+                      <img class="block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+                      <h1 class="text-white text-xl font-bold ml-2">Info-App</h1>
+                  </a>
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="/proteccion.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Proteccion y Seguridad</a>
+      
+                  <a href="/vulnerabilidad.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Vulnerabilidades del Sistema</a>
+      
+                  <a href="/malware.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tipos de Malware</a>
+
+                  <a href="/tecnicas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tecnicas para Proteger el Sistema Operativo</a>
+      
+
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              
+      
+              
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="/proteccion.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Proteccion y Seguridad</a>
+      
+            <a href="/vulnerabilidad.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Vulnerabilidades del Sistema</a>
+      
+            <a href="/malware.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Tipos de Malware</a>
+
+            
+            <a href="/tecnicas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Tecnicas para Proteger el Sistema Operativo</a>
+      
+          </div>
+        </div>
+    </nav>
+
+
+      <div class="bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
+      
+            <div class="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10">
+              <div class="group relative">
+                <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                  <a href="/proteccion.html">
+                      <img src="img/proteccion y seguridad.jpg" alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug." class="w-full h-full object-center object-cover">
+                  </a>
+                </div>
+                <h3 class="mt-6 text-sm text-black-500 font-bold text-2xl">
+                  <a href="/proteccion.html">
+                    <span class="absolute inset-0"></span>
+                    Proteccion y Seguridad
+                  </a>
+                </h3>
+              </div>
+      
+              <div class="group relative">
+                <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                  <a href="/vulnerabilidad.html">
+                    <img src="img/vulnerabilidad.jpg" alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant." class="w-full h-full object-center object-cover">
+                  </a>
+                </div>
+                <h3 class="mt-6 text-sm text-black-500 font-bold text-2xl">
+                    <a href="/vulnerabilidad.html">
+                      <span class="absolute inset-0"></span>
+                      Vulnerabilidades del Sistema
+                    </a>
+                </h3>
+              </div>
+      
+              <div class="group relative">
+                <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                  <a href="/malware.html">
+                      <img src="img/malware.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="w-full h-full object-center object-cover">
+                  </a>
+                </div>
+                <h3 class="mt-6 text-sm text-black-500 font-bold text-2xl">
+                    <a href="/malware.html">
+                      <span class="absolute inset-0"></span>
+                      Tipos de Malware
+                    </a>
+                </h3>
+              </div>
+
+              <div class="group relative">
+                <div class="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                  <a href="/tecnicas.html">
+                      <img src="img/sistema operativo.jpg" alt="Collection of four insulated travel bottles on wooden shelf." class="w-full h-full object-center object-cover">
+                  </a>
+                </div>
+                <h3 class="mt-6 text-sm text-black-500 font-bold text-2xl">
+                    <a href="/tecnicas.html">
+                      <span class="absolute inset-0"></span>
+                      Tecnicas para Proteger el Sistema Operativo
+                    </a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="w-full max-w-container mx-auto border-t py-10 text-center flex items-center justify-center text-sm text-gray-500">
+        <p>Luis Rios C.I: 29.570.652</p>
+        <p class="ml-3 border-l border-gray-200 pl-3">
+          <a class="hover:text-teal-600" href="/privacy-policy">Ingenieria en Sistema - Sistemas Operativos 2</a>
+        </p>
+      </footer>
+</body>
+</html>

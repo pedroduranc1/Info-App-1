@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info-App - vulnerabilidad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                  <a href="/" class="flex">
+                      <img class="block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+                      <h1 class="text-white text-xl font-bold ml-2">Info-App</h1>
+                  </a>
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="/proteccion.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Proteccion y Seguridad</a>
+      
+                  <a href="/vulnerabilidad.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Vulnerabilidades del Sistema</a>
+      
+                  <a href="/malware.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tipos de Malware</a>
+
+                  <a href="/tecnicas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tecnicas para Proteger el Sistema Operativo</a>
+      
+
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              
+      
+              
+            </div>
+          </div>
+        </div>
+      
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="/proteccion.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Proteccion y Seguridad</a>
+      
+            <a href="/vulnerabilidad.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Vulnerabilidades del Sistema</a>
+      
+            <a href="/malware.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Tipos de Malware</a>
+
+            
+            <a href="/tecnicas.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-center font-medium">Tecnicas para Proteger el Sistema Operativo</a>
+      
+          </div>
+        </div>
+    </nav>
+
+    <div class="w-full relative flex items-center bg-white px-4 pt-14 pb-8 overflow-hidden sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+        
+
+        <div class="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:gap-x-8">
+          <div class="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
+            <img src="/img/sistema operativo.jpg" alt="Two each of gray, white, and black shirts arranged on table." class="object-center object-cover">
+          </div>
+          <div class="sm:col-span-8 lg:col-span-7">
+            <h2 class="text-4xl mb-8 font-extrabold text-gray-900 sm:pr-12">
+                Tecnicas para Proteger el Sistema Operativo
+            </h2>
+
+            <section aria-labelledby="information-heading" class="mt-1">
+              <h3 id="information-heading" class="sr-only">Product information</h3>
+
+              <p class="text-2xl text-gray-900">
+                El sistema operativo es el entorno físico en el que se ejecuta la aplicación. Cualquier vulnerabilidad en el sistema operativo puede comprometer la seguridad de la aplicación. La protección del sistema operativo garantiza la estabilidad del entorno, el control del acceso a los recursos y el control del acceso externo al entorno.
+              </p>
+
+              <p class="text-2xl text-gray-900 mb-5">
+                La seguridad física del sistema es esencial. Las amenazas pueden llegar a través de la web, pero también pueden llegar de un terminal físico. Aunque el acceso web sea muy seguro, si un atacante obtiene acceso físico a un servidor, entrar en un sistema es mucho más fácil.  
+              </p>
+
+              <p class="text-2xl text-gray-900">
+                * Limite el número de cuentas de usuario en los sistemas servidores.Las cuentas de usuario innecesarias y heredadas aumentan la complejidad del sistema y pueden presentar vulnerabilidades en el sistema.
+              </p>
+              <p class="text-2xl text-gray-900">
+                * Asegúrese de que sólo unos cuantos usuarios de confianza tengan acceso administrativo a los sistemas servidores.
+              </p>
+              <p class="text-2xl text-gray-900">
+                * Asigne los permisos de acceso mínimos necesarios para la cuenta que ejecuta la aplicación.
+              </p>
+
+              <p class="text-2xl text-gray-900">
+                * Desarrolle una contraseña que dé la seguridad del sistema operativo.
+              </p>
+
+              <p class="text-2xl text-gray-900">
+                * Otorgue a los usuarios permisos de sólo lectura para los directorios necesarios.Si los atacantes obtiene acceso a una aplicación, tendrán los permisos de usuario.
+              </p>
+
+              <p class="text-2xl text-gray-900">
+                * Niegue el acceso de forma predeterminada.
+              </p>
+             
+              <p class="text-2xl text-gray-900">
+                * Reducir el nivel de permisos de acceso para los usuarios de los servicios de red.
+              </p>
+
+              <p class="text-2xl text-gray-900">
+                * Planifique el mantenimiento regular de los parches de seguridad.
+              </p>
+
+              <p class="text-2xl text-gray-900">
+                * Elimine las aplicaciones que no sean esenciales para reducir las posibles vulnerabilidades del sistema.
+              </p>
+
+              
+
+            </section>
+
+            <section aria-labelledby="options-heading" class="mt-10">
+              <h3 id="options-heading" class="sr-only">Product options</h3>
+
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <footer class="w-full max-w-container mx-auto border-t py-10 text-center lg:absolute sm:fixed bottom-0 flex items-center justify-center text-sm text-gray-500">
+        <p>Luis Rios C.I: 29.570.652</p>
+        <p class="ml-3 border-l border-gray-200 pl-3">
+          <a class="hover:text-teal-600" href="/privacy-policy">Ingenieria en Sistema - Sistemas Operativos 2</a>
+        </p>
+      </footer>
+</body>
+</html>
